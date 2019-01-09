@@ -16,8 +16,8 @@ build:
 	./node_modules/gluejs/bin/gluejs \
 	--include ./lib/web \
 	--exclude package.json \
-	$(DEFAULTS) \
-	--command 'uglifyjs --no-copyright --mangle-toplevel'
+	$(DEFAULTS) 
+#	--command 'uglifyjs --no-copyright --mangle-toplevel'
 
 build-debug:
 	@mkdir -p ./dist/
